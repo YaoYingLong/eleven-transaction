@@ -8,14 +8,14 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.65.232:8848  #注册中心地址
-        namespace: 80a98d11-492c-4008-85aa-32d889e9b0d0  #环境隔离
+        server-addr: 127.0.0.1:8848  #注册中心地址
+#        namespace: 80a98d11-492c-4008-85aa-32d889e9b0d0  #环境隔离
   main:
     allow-bean-definition-overriding: true
 
   datasource:
     ds0:
-      url: jdbc:mysql://localhost:3306/bank1?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+      url: jdbc:mysql://localhost:3307/bank1?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
       username: root
       password: root
       type: com.alibaba.druid.pool.DruidDataSource
@@ -37,7 +37,7 @@ org:
   dromara:
     hmily :
       serializer : kryo
-      recoverDelayTime : 30
+      recoverDelayTime : 3000
       retryMax : 30
       scheduledDelay : 30
       scheduledThreadMax :  10
@@ -45,6 +45,10 @@ org:
       started: true
       hmilyDbConfig :
         driverClassName  : com.mysql.jdbc.Driver
-        url :  jdbc:mysql://localhost:3306/hmily?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        url :  jdbc:mysql://localhost:3307/hmily?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
         username : root
         password : root
+
+logging:
+  level:
+    com.eleven: debug

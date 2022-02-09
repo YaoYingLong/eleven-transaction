@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.tuling</groupId>
+        <groupId>com.eleven</groupId>
         <artifactId>springcloud-nacos-feign-seata</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.tuling</groupId>
+    <groupId>com.eleven</groupId>
     <artifactId>order-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>order-service</name>
@@ -70,7 +70,7 @@
         </dependency>
     
         <dependency>
-            <groupId>com.tuling</groupId>
+            <groupId>com.eleven</groupId>
             <artifactId>mysql-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>

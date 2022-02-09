@@ -4,7 +4,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tuling</groupId>
+    <groupId>com.eleven</groupId>
     <artifactId>multiple-datasource</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     
